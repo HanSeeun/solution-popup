@@ -1,0 +1,254 @@
+.popup-content {
+    width: 1020px;
+    height: 1225px;
+    background-image: url(./images/적극행정_배경.png);
+    margin: 50px 30px;
+    float: left;
+    border-radius: 15px;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
+  }
+.container{
+    width: 997px;
+    height: 1150px;
+    float: left;
+    margin: 10px 12px;
+    overflow-x: auto;
+    
+}
+.back_text{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5c1ff;
+    float: right; 
+    margin-right: 18px;
+    margin-top: 10px;
+}
+.contents_title{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;  
+    margin-left: 15px;
+}
+.contents_1{
+    width: 100%;
+    height: 430px;
+    float: left; 
+}
+.contents_1_1{
+    width: 495px;
+    height: 100%;
+    float: left;
+}
+.content1_1img{
+    margin-top: -30px;
+}
+.contents_1_2 {
+    width: 495px;
+    height: 100%;
+    float: left;
+}
+.contents_1_2_wrap {
+    width: 465px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18px;
+    margin-top: 26px;
+}
+.contents_1_2_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: stretch
+} 
+.contents_1_2_list li {
+    width: calc(45% - 0px);
+    background-color: #463e7a;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 10px 6px;
+    border-radius: 10px;
+    
+}
+/* 첫 번째 열의 마지막 요소에는 margin-right 값을 0으로 설정 */
+.contents_1_2_list li:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+/* 첫 번째 행의 마지막 요소에는 margin-bottom 값을 0으로 설정 */
+.contents_1_2_list li:nth-child(-n + 2) {
+    margin-bottom: 0;
+}
+.contents_1_2_title {
+    width: 210px;
+    height:26px;
+    background: #2c2a57;
+    float: left;
+    border-radius: 34px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    padding-top: 8px;
+}  
+.contents_1_2_title_icon{
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background-color: #7c789a;
+    float: left;
+    margin-left: 8px;
+    margin-top: 4px;
+    margin-right: 12px;
+}
+.contents_1_2_sub_title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ff9600;
+    float: right;
+    margin-right: 12px;
+}  
+.contents_1_2_text {
+    width: 170px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    display: inline-block;
+    margin-left: 35px;
+    vertical-align: middle;
+    float: left;
+    position: relative;
+}
+.contents_1_2_up_text{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ff5e5e;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.contents_1_2_down_text{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #5677db;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    vertical-align: middle;
+}
+.contents_2{
+    width: 100%;
+    height: 245px;
+    float: left;
+    margin-top: 4px;
+}
+.content2-img{
+    margin-left: 30px;
+    margin-top: 22px;
+}
+.contents_3{
+    width: 100%;
+    height: 465px;
+    float: left;
+    margin-top: 4px;
+}
+.contents_title img{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.contents_3_wrap{
+    width: 942px;
+    height: 393px;
+    margin: 26px auto;
+    background: #362d6b;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* 스크롤바 스타일 지정 */
+::-webkit-scrollbar {
+    width: 9px;
+    border-radius: 10px;
+    background-color: #4c447f; /* 스크롤바 배경색 */
+}
+  
+  /* 스크롤바 thumb(막대기) 스타일 지정 */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #7c789a; /* 스크롤바 thumb 색상 */
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    left: 0px;
+    top: 0px;
+   
+}
+thead th {
+    background: #484298;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #7f82bb;
+}
+table tr:nth-child(even) td {
+    background-color: #362d6b;
+}
+  
+table tr:nth-child(odd) td {
+    background-color: #2e265b;
+}
+tbody td {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5c1ff;
+    text-align: center;
+}
+tr{
+    height: 40px;
+}
+.inner_table {
+    width: 913px;
+    height: 192px;
+    border-collapse: collapse;
+    position: absolute;
+    left: 14px;
+    top: 190px;
+}
+.inner_table thead th {
+    background: #484298;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #7f82bb;
+    padding: 8px;
+}
+.inner_table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.inner_table tbody td {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5c1ff;
+    text-align: center;
+}
