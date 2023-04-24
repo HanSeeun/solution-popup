@@ -1,6 +1,6 @@
 .popup-content {
   width: 1020px;
-  height: 1890px;
+
   background-image: url(./images/TBL_bg.png);
   margin: 50px 30px;
   float: left;
@@ -26,7 +26,7 @@
 
 .container{
   width: 997px;
-  height: 1820px;
+
   float: left;
   margin: 10px 12px;
   overflow-x: auto;
@@ -173,21 +173,17 @@
 }
 .contents_4{
   width: 100%;
-  height: 455px;
   float: left;
   margin-top: 8px;
   background-image: url(./images/TBL_4_bg.png);
 }
 .contents_4_wrap{
   width: 942px;
-  height: 393px;
+  height: calc(100% - 92px);
   margin: 26px auto;
   background: #362d6b;
   overflow-y: scroll;
   overflow-x: hidden;
-  position: relative;
-  left: 0px;
-  top: 0px;  
 }
 /* 스크롤바 스타일 지정 */
 ::-webkit-scrollbar {
@@ -204,10 +200,6 @@
 .product_table{
   width: 100%;
   border-collapse: collapse;
-  position: relative;
-  left: 0px;
-  top: 0px;
- 
 }
 .product_thead th {
   background: #484298;
@@ -237,14 +229,17 @@ tr{
 .table-slider{
   height: 192px;
 }
+.inner_table{
+  display: none;
+}
 .inner_table_wrap{
   width: 913px;
-  height: 197px;
+  height: 195px;
   border-collapse: collapse;
-  position: absolute;
-  left: 14px;
-  top: 190px;
-  overflow: hidden;
+  position: relative;
+  left: 12px;
+  top: 0px;
+ 
 }
 .inner_thead{
   width: 100%;
@@ -258,7 +253,6 @@ tr{
   padding: 8px;
   list-style: none;
   margin: 0px;
-  
 }
 .inner_thead>li{
   float: left;

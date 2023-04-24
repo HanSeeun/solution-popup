@@ -164,8 +164,8 @@
                                 </tr>
                             </thead>
                             <tbody class="product_tbody">
-                                <tr>
-                                    <td>
+                                <tr class="outer_td"> 
+                                    <td class="dropdown_btn">
                                         <img src="./images/dropdown_icon.png" alt="">
                                     </td>
                                     <td>공지사항</td>
@@ -174,36 +174,8 @@
                                     <td>1.55ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
                                     <td>1000건 (16:00-17:00)</td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./images/dropdown_icon.png" alt="">
-                                    </td>
-                                    <td>공지사항</td>
-                                    <td>INSERT INTO TBL_NNA(...)VALUES(...)</td>
-                                    <td>1500(15%)</td>
-                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> -0.11ms)</td>
-                                    <td>1000건 (16:00-17:00)</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./images/dropdown_icon.png" alt="">
-                                    </td>
-                                    <td>관계도</td>
-                                    <td>SELECT'FROM TBL-_NNAWHERE...</td>
-                                    <td>400(4%)</td>
-                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> -1.01ms)</td>
-                                    <td>1000건 (16:00-17:00)</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./images/dropup_icon.png" alt="">
-                                    </td>
-                                    <td>체육포털</td>
-                                    <td>/notice/selecetList.do</td>
-                                    <td>300(3%)</td>
-                                    <td>15.035ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
-                                    <td>1000건 (16:00-17:00)</td>
-                                    <td>
+                                <tr class="inner_table">
+                                    <td colspan="8">
                                         <div class="inner_table_wrap">
                                             <div class="inner_table_list">
                                                 <ul class="inner_thead">
@@ -278,9 +250,368 @@
                                                 <span class="prev_btn"><img src="./images/left_btn.png" alt="" /></span>
                                                 <span class="next_btn"><img src="./images/right_btn.png" alt="" /></span> 
                                                 <!--슬라이드 버튼-->
- 
                                             </div>
-                                        </div>
+                                        </div>       
+                                    </td>
+                                </tr>
+                                <tr class="outer_td">
+                                    <td class="dropdown_btn">
+                                        <img src="./images/dropdown_icon.png" alt="">
+                                    </td>
+                                    <td>공지사항</td>
+                                    <td>INSERT INTO TBL_NNA(...)VALUES(...)</td>
+                                    <td>1500(15%)</td>
+                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> -0.11ms)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                </tr>
+                                <tr class="inner_table">
+                                    <td colspan="8">
+                                        <div class="inner_table_wrap">
+                                            <div class="inner_table_list">
+                                                <ul class="inner_thead">
+                                                    <li>Query 상세보기</li>
+                                                    <li>비인딩 컬럼</li>
+                                                </ul>
+                                                <ul class="inner_tbody">
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>SELECT*</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>aaaaa</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>bbbbb</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>nnnnnn</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>rrrrr</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="dot_wrap">
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                </div>
+                                                <!--슬라이드 버튼-->
+                                                <span class="prev_btn"><img src="./images/left_btn.png" alt="" /></span>
+                                                <span class="next_btn"><img src="./images/right_btn.png" alt="" /></span> 
+                                                <!--슬라이드 버튼-->
+                                            </div>
+                                        </div>       
+                                    </td>
+                                </tr>
+                                <tr class="outer_td">
+                                    <td class="dropdown_btn">
+                                        <img src="./images/dropdown_icon.png" alt="">
+                                    </td>
+                                    <td>관계도</td>
+                                    <td>SELECT'FROM TBL-_NNAWHERE...</td>
+                                    <td>400(4%)</td>
+                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> -1.01ms)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                </tr>
+                                <tr class="inner_table">
+                                    <td colspan="8">
+                                        <div class="inner_table_wrap">
+                                            <div class="inner_table_list">
+                                                <ul class="inner_thead">
+                                                    <li>Query 상세보기</li>
+                                                    <li>비인딩 컬럼</li>
+                                                </ul>
+                                                <ul class="inner_tbody">
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>SELECT*</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>aaaaa</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>bbbbb</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>nnnnnn</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>rrrrr</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="dot_wrap">
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                </div>
+                                                <!--슬라이드 버튼-->
+                                                <span class="prev_btn"><img src="./images/left_btn.png" alt="" /></span>
+                                                <span class="next_btn"><img src="./images/right_btn.png" alt="" /></span> 
+                                                <!--슬라이드 버튼-->
+                                            </div>
+                                        </div>       
+                                    </td>
+                                </tr>
+                                <tr class="outer_td">
+                                    <td class="dropdown_btn">
+                                        <img src="./images/dropdown_icon.png" alt="">
+                                    </td>
+                                    <td>체육포털</td>
+                                    <td>/notice/selecetList.do</td>
+                                    <td>300(3%)</td>
+                                    <td>15.035ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                </tr>
+                                <tr class="inner_table">
+                                    <td colspan="8">
+                                        <div class="inner_table_wrap">
+                                            <div class="inner_table_list">
+                                                <ul class="inner_thead">
+                                                    <li>Query 상세보기</li>
+                                                    <li>비인딩 컬럼</li>
+                                                </ul>
+                                                <ul class="inner_tbody">
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>SELECT*</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>aaaaa</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>bbbbb</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>nnnnnn</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>rrrrr</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="dot_wrap">
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                </div>
+                                                <!--슬라이드 버튼-->
+                                                <span class="prev_btn"><img src="./images/left_btn.png" alt="" /></span>
+                                                <span class="next_btn"><img src="./images/right_btn.png" alt="" /></span> 
+                                                <!--슬라이드 버튼-->
+                                            </div>
+                                        </div>       
+                                    </td>
+                                </tr>
+                                <tr class="outer_td">
+                                    <td class="dropdown_btn">
+                                        <img src="./images/dropdown_icon.png" alt="">
+                                    </td>
+                                    <td>체육포털</td>
+                                    <td>/notice/selecetList.do</td>
+                                    <td>300(3%)</td>
+                                    <td>15.035ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                </tr>
+                                <tr class="inner_table">
+                                    <td colspan="8">
+                                        <div class="inner_table_wrap">
+                                            <div class="inner_table_list">
+                                                <ul class="inner_thead">
+                                                    <li>Query 상세보기</li>
+                                                    <li>비인딩 컬럼</li>
+                                                </ul>
+                                                <ul class="inner_tbody">
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>SELECT*</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>aaaaa</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>bbbbb</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>nnnnnn</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inner_left_text">
+                                                            <p>rrrrr</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="dot_wrap">
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                </div>
+                                                <!--슬라이드 버튼-->
+                                                <span class="prev_btn"><img src="./images/left_btn.png" alt="" /></span>
+                                                <span class="next_btn"><img src="./images/right_btn.png" alt="" /></span> 
+                                                <!--슬라이드 버튼-->
+                                            </div>
+                                        </div>       
                                     </td>
                                 </tr>
                             </tbody>
@@ -390,18 +721,6 @@
     <!--GSAP CDN 코드 -->
     
     <script>
-        //드롭다운 스크립트 시작
-        const dropdownButton = document.querySelector('.dropdown-toggle');
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-      
-        dropdownButton.addEventListener('click', function() {
-          if (dropdownMenu.style.display === 'none') {
-            dropdownMenu.style.display = 'block';
-          } else {
-            dropdownMenu.style.display = 'none';
-          }
-        });
-        //드롭다운 스크립트 끝
 
         //슬라이드 스크립트 시작
         window.addEventListener('load', ()=>{
@@ -409,13 +728,13 @@
         })
 
         function visualSlideEffect(){
-            const visualWrap=document.querySelector('.inner_table_wrap')
-            const visualInner=document.querySelector('.inner_table_list')
-            const visualList=document.querySelector('.inner_tbody')
+            const visualWrap=document.querySelectorAll('.inner_table_wrap')
+            const visualInner=document.querySelectorAll('.inner_table_list')
+            const visualList=document.querySelectorAll('.inner_tbody')
             const visualLi=document.querySelectorAll('.inner_tbody>li')
             const btnImg=document.querySelectorAll('.inner_tbody>span>img')
-            const nextBtn=document.querySelector('.next_btn')
-            const prevBtn=document.querySelector('.prev_btn')
+            const nextBtn=document.querySelectorAll('.next_btn')
+            const prevBtn=document.querySelectorAll('.prev_btn')
             const dots=document.querySelectorAll('.dot')
 
             let visualLength=visualLi.length
@@ -516,6 +835,71 @@
             }
         }
         //슬라이드 스크립트 끝
+        
+        //드롭다운 table스크립트 시작
+ 
+        // outer_table의 모든 tr 요소를 가져옵니다.
+        const outerTrList = document.querySelectorAll('.outer_td');
+
+        // outerTrList를 반복하며 각 tr 요소에 이벤트 리스너를 추가합니다.
+        outerTrList.forEach((outerTr) => {
+        // 현재 tr 요소에서 dropdown_btn 요소를 가져옵니다.
+        const dropdownBtn = outerTr.querySelector('.dropdown_btn');
+
+        // dropdown_btn 요소에 클릭 이벤트 리스너를 추가합니다.
+        dropdownBtn.addEventListener('click', (event) => {
+            // 현재 클릭된 dropdown_btn 요소의 부모 요소인 outer_td 요소를 가져옵니다.
+            const outerTd = event.target.closest('.outer_td');
+
+            // outer_td 요소의 다음 형제 요소인 inner_table_wrap 요소를 가져옵니다.
+            const innerTableWrap = outerTd.nextElementSibling;
+
+            // inner_table_wrap 요소가 보이는 상태라면
+            if (innerTableWrap.style.display === 'table-row') {
+            // inner_table_wrap 요소를 숨깁니다.
+            innerTableWrap.style.display = 'none';
+
+            // dropdown_btn 이미지를 dropup_icon.png로 변경합니다.
+            dropdownBtn.querySelector('img').src = './images/dropdown_icon.png';
+
+            // 현재 클릭된 outer_td 요소에 active 클래스를 제거합니다.
+            outerTd.classList.remove('active');
+            } else {
+            // inner_table_wrap 요소가 숨겨진 상태라면
+            // 모든 inner_table_wrap 요소를 숨깁니다.
+            document.querySelectorAll('.inner_table').forEach((innerTableWrap) => {
+                innerTableWrap.style.display = 'none';
+            });
+
+            
+            // 모든 outer_td 요소에서 active 클래스를 제거합니다.
+            document.querySelectorAll('.outer_td').forEach((outerTd) => {
+                outerTd.classList.remove('active');
+            });
+
+            // inner_table_wrap 요소를 보이는 상태로 변경합니다.
+            innerTableWrap.style.display = 'table-row';
+
+            // dropdown_btn 이미지를 dropdown_icon.png로 변경합니다.
+            dropdownBtn.querySelector('img').src = './images/dropup_icon.png';
+
+            // 현재 클릭된 outer_td 요소에 active 클래스를 추가합니다.
+            outerTd.classList.add('active');
+
+             // inner_table_wrap에 슬라이드 효과를 적용합니다.
+             gsap.from(innerTableWrap, {
+                duration: 1.4,
+                height: 0,
+                opacity: 0,
+                ease: 'power2.out'
+            });
+            
+            }
+        });
+        });
+
+
+        //드롭다운 table스크립트 끝
     </script>
    
     

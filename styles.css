@@ -234,7 +234,7 @@ tr{
     margin-left: 12px;
 }    
 .inner_table_wrap{
-    height: 0px;
+    display: none;
 }
 .inner_table thead th {
     background: #484298;
@@ -254,27 +254,4 @@ tr{
     font-weight: 400;
     color: #a5c1ff;
     text-align: center;
-}
-
-.dropdown-icon-down{
-    background-image: url(img/dropdown-icon.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-    background-size: auto;
-}
-
-.dropdown-icon-up{
-    background-image: url(img/dropdown-icon-up.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-    background-size: auto;
-}
-
-.display{
-    height: 0px;
-    overflow: hidden;
 }
