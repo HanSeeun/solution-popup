@@ -209,7 +209,7 @@
                                 <col style="width: 17%">
                                 <col style="width: 17%">
                                 <col style="width: 17%">
-                              </colgroup>
+                            </colgroup>
                             <thead>
                                 <tr>
                                     <th></th>
@@ -223,8 +223,8 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>
+                                <tr class="outer_td">
+                                    <td class="dropdown_btn">
                                         <img src="./images/dropdown_icon.png" alt="">
                                     </td>
                                     <td style="color: #5de2ff;">A</td>
@@ -238,47 +238,7 @@
                                     <td>1.03ms (21시 10분 3초)</td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <img src="./images/dropdown_icon.png" alt="">
-                                    </td>
-                                    <td style="color: #89d585;">B</td>
-                                    <td>/notice/selecet.do
-                                        <img src="./images/적극행정_테이블_돋보기아이콘.png" alt="">
-                                    </td>
-                                    <td>400 (4%)</td>
-                                    <td>10.02ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
-                                    <td>1000건 (16:00-17:00)</td>
-                                    <td>1000건 (16:00-17:00)</td>
-                                    <td>1.03ms (21시 10분 3초)</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./images/dropdown_icon.png" alt="">
-                                    </td>
-                                    <td style="color: #a74e3d;">C</td>
-                                    <td>/notice/selecetList.do
-                                        <img src="./images/적극행정_테이블_돋보기아이콘.png" alt="">
-                                    </td>
-                                    <td>2600 (26%)</td>
-                                    <td>1.55ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
-                                    <td>1000건 (16:00-17:00)</td>
-                                    <td>1000건 (16:00-17:00)</td>
-                                    <td>1.03ms (21시 10분 3초)</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./images/dropup_icon.png" alt="">
-                                    </td>
-                                    <td style="color: #fff694;">D</td> 
-                                    <td>/notice/selecet.do
-                                        <img src="./images/적극행정_테이블_돋보기아이콘.png" alt="">
-                                    </td>
-                                    <td>300 (3%)</td>
-                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
-                                    <td>1000건 (16:00-17:00)</td>
-                                    <td>1000건 (16:00-17:00)</td>
-                                    <td>1.03ms (21시 10분 3초)</td>
-                                    <td>
+                                    <td colspan="8">
                                         <table class="inner_table">
                                             <colgroup>
                                                 <col style="width: 25%">
@@ -318,23 +278,252 @@
                                                     <td>300 (3%)</td>
                                                     <td>15.03ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
                                                     <td>15.03 ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </td> 
+                                </tr>
+                                <tr class="outer_td">
+                                    <td class="dropdown_btn">
+                                        <img src="./images/dropdown_icon.png" alt="">
+                                    </td>
+                                    <td style="color: #89d585;">B</td>
+                                    <td>/notice/selecet.do
+                                        <img src="./images/적극행정_테이블_돋보기아이콘.png" alt="">
+                                    </td>
+                                    <td>400 (4%)</td>
+                                    <td>10.02ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                    <td>1.03ms (21시 10분 3초)</td>
+                                </tr>    
+                                <tr> 
+                                    <td colspan="8">
+                                        <table class="inner_table">
+                                            <colgroup>
+                                                <col style="width: 25%">
+                                                <col style="width: 8%">
+                                                <col style="width: 15%">
+                                                <col style="width: 15%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>Query</th>
+                                                    <th>수행 건수</th>
+                                                    <th>당일 평균 응답시간 <Br>/ 전일대비</th>
+                                                    <th>당일 최대 응답시간 <Br>/ 전일대비</th>
                                                 </tr>
+                                            </thead>
+                                            <tbody>
                                                 <tr>
                                                     <td>UPDATETBL_NNASET...WHERE...</td>
                                                     <td>2600 (26%)</td>
-                                                    <td>1.55ms(+0.32ms)</td>
-                                                    <td>1.55ms(+0.32ms)</td>
+                                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
                                                 </tr>
                                                 <tr>
                                                     <td>UPDATETBL_NNASET...WHERE...</td>
-                                                    <td>2600 (26%)</td>
-                                                    <td>1.55ms(+0.32ms)</td>
-                                                    <td>1.55ms(+0.32ms)</td>
+                                                    <td>1500 (15%)</td>
+                                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>400 (4%)</td>
+                                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>300 (3%)</td>
+                                                    <td>15.03ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>15.03 ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr class="outer_td">
+                                    <td class="dropdown_btn">
+                                        <img src="./images/dropdown_icon.png" alt="">
+                                    </td>
+                                    <td style="color: #a74e3d;">C</td>
+                                    <td>/notice/selecetList.do
+                                        <img src="./images/적극행정_테이블_돋보기아이콘.png" alt="">
+                                    </td>
+                                    <td>2600 (26%)</td>
+                                    <td>1.55ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                    <td>1.03ms (21시 10분 3초)</td>
+                                    <td>
+                                </tr>        
+                                <tr>
+                                    <td colspan="8">
+                                        <table class="inner_table">
+                                            <colgroup>
+                                                <col style="width: 25%">
+                                                <col style="width: 8%">
+                                                <col style="width: 15%">
+                                                <col style="width: 15%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>Query</th>
+                                                    <th>수행 건수</th>
+                                                    <th>당일 평균 응답시간 <Br>/ 전일대비</th>
+                                                    <th>당일 최대 응답시간 <Br>/ 전일대비</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>2600 (26%)</td>
+                                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>1500 (15%)</td>
+                                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>400 (4%)</td>
+                                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>300 (3%)</td>
+                                                    <td>15.03ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>15.03 ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr class="outer_td">
+                                    <td class="dropdown_btn"> 
+                                        <img src="./images/dropup_icon.png" alt="">
+                                    </td>
+                                    <td style="color: #fff694;">D</td> 
+                                    <td>/notice/selecet.do
+                                        <img src="./images/적극행정_테이블_돋보기아이콘.png" alt="">
+                                    </td>
+                                    <td>300 (3%)</td>
+                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                    <td>1.03ms (21시 10분 3초)</td>
+                                </tr>    
+                                <tr>
+                                    <td colspan="8">
+                                        <table class="inner_table">
+                                            <colgroup>
+                                                <col style="width: 25%">
+                                                <col style="width: 8%">
+                                                <col style="width: 15%">
+                                                <col style="width: 15%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>Query</th>
+                                                    <th>수행 건수</th>
+                                                    <th>당일 평균 응답시간 <Br>/ 전일대비</th>
+                                                    <th>당일 최대 응답시간 <Br>/ 전일대비</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>2600 (26%)</td>
+                                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>1500 (15%)</td>
+                                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>400 (4%)</td>
+                                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>300 (3%)</td>
+                                                    <td>15.03ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>15.03 ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr> 
                                             </tbody>
                                         </table>
                                     </td>
                                 </tr> 
+                                <tr class="outer_td">
+                                    <td class="dropdown_btn"> 
+                                        <img src="./images/dropup_icon.png" alt="">
+                                    </td>
+                                    <td style="color: #fff694;">E</td> 
+                                    <td>/notice/selecet.do
+                                        <img src="./images/적극행정_테이블_돋보기아이콘.png" alt="">
+                                    </td>
+                                    <td>300 (3%)</td>
+                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                    <td>1000건 (16:00-17:00)</td>
+                                    <td>1.03ms (21시 10분 3초)</td>
+                                </tr>    
+                                <tr>
+                                    <td colspan="8">
+                                        <table class="inner_table">
+                                            <colgroup>
+                                                <col style="width: 25%">
+                                                <col style="width: 8%">
+                                                <col style="width: 15%">
+                                                <col style="width: 15%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>Query</th>
+                                                    <th>수행 건수</th>
+                                                    <th>당일 평균 응답시간 <Br>/ 전일대비</th>
+                                                    <th>당일 최대 응답시간 <Br>/ 전일대비</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>2600 (26%)</td>
+                                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>1.55ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>1500 (15%)</td>
+                                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>0.41ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>400 (4%)</td>
+                                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>10.02ms(<img src="./images/적극행정_테이블_아래아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>UPDATETBL_NNASET...WHERE...</td>
+                                                    <td>300 (3%)</td>
+                                                    <td>15.03ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                    <td>15.03 ms(<img src="./images/적극행정_테이블_위-아이콘.png" alt=""> +0.32ms)</td>
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -344,7 +533,9 @@
             <!--팝업창 컨텐츠 영역-->
     </div>
     <!--팝업창 끝-->
-   
+    <script>
+      
+    </script>
 
 </body>
 </html>

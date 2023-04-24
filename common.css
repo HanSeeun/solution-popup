@@ -13,6 +13,7 @@ header{
   justify-content: flex-start;
   height: 50px;
   padding: 0 20px;
+  background-image: url(./images/header_bg.png);
 }
 .main-icon{
   width: 60px;

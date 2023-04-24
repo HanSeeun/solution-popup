@@ -1,7 +1,6 @@
 .popup-content {
     width: 1020px;
-    height: 1225px;
-    background-image: url(./images/적극행정_배경.png);
+    background-color: #4b4298;
     margin: 50px 30px;
     float: left;
     border-radius: 15px;
@@ -9,7 +8,7 @@
   }
 .container{
     width: 997px;
-    height: 1150px;
+   
     float: left;
     margin: 10px 12px;
     overflow-x: auto;
@@ -40,6 +39,7 @@
     width: 495px;
     height: 100%;
     float: left;
+    background-image: url(./images/1_1_bg.png);
 }
 .content1_1img{
     margin-top: -30px;
@@ -48,6 +48,8 @@
     width: 495px;
     height: 100%;
     float: left;
+    background-image: url(./images/1_2_bg.png);
+    margin-left: 6px;
 }
 .contents_1_2_wrap {
     width: 465px;
@@ -154,6 +156,7 @@
     height: 245px;
     float: left;
     margin-top: 4px;
+    background-image: url(./images/2_bg.png);
 }
 .content2-img{
     margin-left: 30px;
@@ -161,9 +164,9 @@
 }
 .contents_3{
     width: 100%;
-    height: 465px;
     float: left;
     margin-top: 4px;
+    background-image: url(./images/3_bg.png);
 }
 .contents_title img{
     width: 25px;
@@ -174,7 +177,7 @@
 }
 .contents_3_wrap{
     width: 942px;
-    height: 393px;
+    height: calc(100% - 92px);
     margin: 26px auto;
     background: #362d6b;
     overflow-y: scroll;
@@ -194,11 +197,7 @@
 }
 table{
     width: 100%;
-    border-collapse: collapse;
-    position: relative;
-    left: 0px;
-    top: 0px;
-   
+    border-collapse: collapse;  
 }
 thead th {
     background: #484298;
@@ -215,6 +214,10 @@ table tr:nth-child(even) td {
 table tr:nth-child(odd) td {
     background-color: #2e265b;
 }
+
+table tr {
+    margin: 0;
+}
 tbody td {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
@@ -227,12 +230,9 @@ tr{
 }
 .inner_table {
     width: 913px;
-    height: 192px;
     border-collapse: collapse;
-    position: absolute;
-    left: 14px;
-    top: 190px;
-}
+    margin-left: 12px;
+}    
 .inner_table thead th {
     background: #484298;
     text-align: center;

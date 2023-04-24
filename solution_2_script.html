@@ -212,74 +212,59 @@
                                                 </ul>
                                                 <ul class="inner_tbody">
                                                     <li>
-                                                        <p>
-                                                            <span>SELECT*</span>
-                                                            <span>QCN_D</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>FROM TBL_NNA</span>
-                                                            <span>QCN_F</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>WHERE QCN_D = DATA1 AND QCN_F = DATA2</span>
-                                                            <span></span>
-                                                        </p>
+                                                        <div class="inner_left_text">
+                                                            <p>SELECT*</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
                                                     </li>
                                                     <li>
-                                                        <p>
-                                                            <span>AAAA</span>
-                                                            <span>QCN_E</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>BBBBBB</span>
-                                                            <span>QCN_T</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>CCCCC</span>
-                                                            <span></span>
-                                                        </p>
+                                                        <div class="inner_left_text">
+                                                            <p>aaaaa</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
                                                     </li>
                                                     <li>
-                                                        <p>
-                                                            <span>WEFDSFSDF</span>
-                                                            <span>QCN_S</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>FSDFSDF</span>
-                                                            <span>QCN_P</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>QWDEFSDF</span>
-                                                            <span></span>
-                                                        </p>
+                                                        <div class="inner_left_text">
+                                                            <p>bbbbb</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
                                                     </li>
                                                     <li>
-                                                        <p>
-                                                            <span>yyyyyy</span>
-                                                            <span>QCN_K</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>mmmmmm</span>
-                                                            <span>QCN_J</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>GFHFGH</span>
-                                                            <span></span>
-                                                        </p>
+                                                        <div class="inner_left_text">
+                                                            <p>nnnnnn</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
                                                     </li>
                                                     <li>
-                                                        <p>
-                                                            <span>ERTERTER</span>
-                                                            <span>QCN_L</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>NGNGN</span>
-                                                            <span>QCN_Z</span>
-                                                        </p>
-                                                        <p>
-                                                            <span>WERF</span>
-                                                            <span></span>
-                                                        </p>
+                                                        <div class="inner_left_text">
+                                                            <p>rrrrr</p>
+                                                            <p>FROM TBL_NNA</p>
+                                                            <p>WHERE QCN_D = DATA1 AND QCN_F = DATA2</p>
+                                                        </div>
+                                                        <div class="inner_right_text">
+                                                            <p>QCN_D</p>
+                                                            <p>QCN_F</p>
+                                                        </div>
                                                     </li>
                                                 </ul>
                                                 <div class="dot_wrap">
@@ -433,9 +418,6 @@
             const prevBtn=document.querySelector('.prev_btn')
             const dots=document.querySelectorAll('.dot')
 
-            const autoplayIntervalTime = 2000 // 자동 슬라이드 간격 (ms)
-            let autoplayIntervalId = null // setInterval() ID 저장 변수
-
             let visualLength=visualLi.length
             let visualWidth=visualInner.offsetWidth
             let currentIndex=0
@@ -443,7 +425,6 @@
 
             init()
             initEvent()
-            startAutoPlay()
 
             function init(){
                 gsap.set(visualLi, {left:visualWidth, opacity:0.2})
@@ -458,29 +439,47 @@
                 dots.forEach((dot, index) => {
                     dot.addEventListener('click', () => {
                         if (index !== currentIndex) {
-                            nextIndex = index
-                            slideVisualNext()
+                            const direction = index > currentIndex ? 'next' : 'prev';
+                            slideVisualToIndex(index, direction);
                         }
-                    })
-                })
-
-                visualWrap.addEventListener('mouseenter', stopAutoplay) // 마우스 오버 시 자동 슬라이드 멈춤
-                visualWrap.addEventListener('mouseleave', startAutoPlay) // 마우스 아웃 시 자동 슬라이드 재개
-
+                    });
+                });
             }
 
-            function startAutoPlay(){
-                if(!autoplayIntervalId){
-                    autoplayIntervalId=setInterval(()=>{
-                        slideVisualNext()
-                    }, autoplayIntervalTime)
+            function slideVisualToIndex(index, direction) {
+                dots[currentIndex].classList.remove('active');
+
+                if (direction === 'next') {
+                    gsap.to(visualLi[currentIndex], {
+                        left: -visualWidth,
+                        opacity: 0,
+                        duration: 0.4,
+                        ease: 'power1.out'
+                    });
+                    gsap.set(visualLi[index], {
+                        left: visualWidth
+                    });
+                } else {
+                    gsap.to(visualLi[currentIndex], {
+                        left: visualWidth,
+                        opacity: 0,
+                        duration: 0.4,
+                        ease: 'power1.out'
+                    });
+                    gsap.set(visualLi[index], {
+                        left: -visualWidth
+                    });
                 }
-            }
-            function stopAutoplay(){
-                if(autoplayIntervalId){
-                    clearInterval(autoplayIntervalId)
-                    autoplayIntervalId=null
-                }
+
+                gsap.to(visualLi[index], {
+                    left: 0,
+                    opacity: 1,
+                    duration: 0.4,
+                    ease: 'power1.out'
+                });
+
+                currentIndex = index;
+                dots[currentIndex].classList.add('active');
             }
 
             function slideVisualNext(){
