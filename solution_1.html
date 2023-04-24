@@ -237,8 +237,8 @@
                                     <td>1000건 (16:00-17:00)</td>
                                     <td>1.03ms (21시 10분 3초)</td>
                                 </tr>
-                                <tr>
-                                    <td colspan="8">
+                                <tr class="inner_table_wrap">
+                                    <td colspan="8" style="display: none;">
                                         <table class="inner_table">
                                             <colgroup>
                                                 <col style="width: 25%">
@@ -297,8 +297,8 @@
                                     <td>1000건 (16:00-17:00)</td>
                                     <td>1.03ms (21시 10분 3초)</td>
                                 </tr>    
-                                <tr> 
-                                    <td colspan="8">
+                                <tr class="inner_table_wrap"> 
+                                    <td colspan="8" style="display: none;">
                                         <table class="inner_table">
                                             <colgroup>
                                                 <col style="width: 25%">
@@ -358,8 +358,8 @@
                                     <td>1.03ms (21시 10분 3초)</td>
                                     <td>
                                 </tr>        
-                                <tr>
-                                    <td colspan="8">
+                                <tr class="inner_table_wrap">
+                                    <td colspan="8" style="display: none;">
                                         <table class="inner_table">
                                             <colgroup>
                                                 <col style="width: 25%">
@@ -418,8 +418,8 @@
                                     <td>1000건 (16:00-17:00)</td>
                                     <td>1.03ms (21시 10분 3초)</td>
                                 </tr>    
-                                <tr>
-                                    <td colspan="8">
+                                <tr class="inner_table_wrap">
+                                    <td colspan="8" style="display: none;">
                                         <table class="inner_table">
                                             <colgroup>
                                                 <col style="width: 25%">
@@ -478,8 +478,8 @@
                                     <td>1000건 (16:00-17:00)</td>
                                     <td>1.03ms (21시 10분 3초)</td>
                                 </tr>    
-                                <tr>
-                                    <td colspan="8">
+                                <tr class="inner_table_wrap">
+                                    <td colspan="8" style="display: none;">
                                         <table class="inner_table">
                                             <colgroup>
                                                 <col style="width: 25%">
@@ -534,7 +534,37 @@
     </div>
     <!--팝업창 끝-->
     <script>
-      
+     
+     button();
+        function button(params) {  
+            const $dropdownButton = document.getElementsByClassName('.dropdown_btn');
+            const $submenuWrap = document.getElementsByClassName('.inner_table_wrap');
+            
+            for (let i = 0; i < $dropdownButton.length; i++) {
+                
+                $dropdownButton[i].addEventListener('click', (e)=>{
+                    // 버튼 클릭 시 버튼 모양이 바뀌는 이벤트와, 아코디언 메뉴가 나오는 이벤트 발생
+                    if ($dropdownButton[i].classList.contains('dropdown-icon-down')) {
+                        $dropdownButton[i].classList.remove('dropdown-icon-down');
+                        $dropdownButton[i].classList.add('dropdown-icon-up');
+                        $submenuWrap[i].classList.add('display')
+                    }
+                    else{
+                        $dropdownButton[i].classList.add('dropdown-icon-down');
+                        $dropdownButton[i].classList.remove('dropdown-icon-up');
+                        $submenuWrap[i].classList.remove('display')
+                    }
+                    // i번째 이외의 다른 버튼을 눌렀을 때, 버튼 모양을 바꿔주는 이벤트
+                    for (let j = 0; j < $dropdownButton.length; j++) {
+                        if (j !== i) {
+                            $dropdownButton[j].classList.add('dropdown-icon-down');
+                            $dropdownButton[j].classList.remove('dropdown-icon-up');
+                        }
+                        
+                    }
+                })
+            }
+        }
     </script>
 
 </body>
